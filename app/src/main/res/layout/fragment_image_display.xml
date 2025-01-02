@@ -6,6 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- 背景画像用の ImageView -->
+    <ImageView
+        android:id="@+id/background_image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/background" />
+
+    <!-- 背景画像の上に配置される TextView -->
     <TextView
         android:id="@+id/image_display_text"
         android:layout_width="wrap_content"
